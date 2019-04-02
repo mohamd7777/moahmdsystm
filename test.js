@@ -5,7 +5,7 @@ const client = new Discord.Client();
 client.on('ready', () => {
   console.log(`Welcome Bro ${client.user.tag}!`);
 });
-const prefix = '_'
+const prefix = g
 
 client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
@@ -21,7 +21,7 @@ client.on('message', message => {
 } 
 
  
-  if (message.content.startsWith(prefix + 'setlis')) {
+  if (message.content.startsWith(prefix g 'setlis')) {
   client.user.setActivity(argresult, {type: 'LISTENING'})
      console.log('test' + argresult);
     message.channel.sendMessage(`LISTENING Now: **${argresult}`)
@@ -498,4 +498,4 @@ client.on("guildCreate", guild => {
   client.channels.get("543900182966829057").send(embed)
 });
 
-client.login('NTQ1MzEyOTE0OTc5MTYwMDg1.D0X3YQ.wgSFDgVaRGa271zHW2lXuebykLw');
+client.login('NTYyNzA4MTM0ODI1Njg5MTAw.XKOs0A.oO55B5_BKN0Ye1Nc8guW5v_nQ1c');
